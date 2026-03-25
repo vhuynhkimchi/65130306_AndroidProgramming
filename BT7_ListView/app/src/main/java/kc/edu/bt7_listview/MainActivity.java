@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
+    ArrayList<String> dsTenTinhThanhVN;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Hiển thị dữ liệu lên ListView
         //B1: cần có dữ liệu
-        ArrayList<String> dsTenTinhThanhVN; //khai bao
+        //khai bao
         dsTenTinhThanhVN = new ArrayList<String>(); //Tao the hien cu the, xin moi
         //Them du lieu vao dsTenTinhThanhVN
         dsTenTinhThanhVN.add("An Giang");
@@ -49,23 +49,21 @@ public class MainActivity extends AppCompatActivity {
         //3.2. Gan
         lvTenTinh.setAdapter(adapterTinhThanh);
         //3,3,Lang nghe va xu ly su kien user tuong tac
-        // Tạo bộ lắng nghe và xử lý sự kiện OnItemClick, đặt vào một biến
-        lvTenTinh.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                // Lấy tên tỉnh thành tại vị trí được click
-                String tenTinhThanh = dsTenTinhThanhVN.get(position);
-                // Hiển thị thông báo
-                Toast.makeText(MainActivity.this,
-                        "Bạn vừa chọn: " + tenTinhThanh,
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (
-                v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        // gắn bộ lắng nghe vào
+        lvTenTinh.setOnItemClickListener(BoLangNghevaXL);
     }
+    //Tạo bộ lắng nghe và xử lý sự kiện OnItemClick, đặt vào một biến
+    //vd: BoLangNghevaXL
+    AdapterView.OnItemClickListener BoLangNghevaXL = new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
+            //Code xu ly o day
+            // i la vi tri phan tu vua duoc click
+            String strTenTinhChon = dsTenTinhThanhVN.get(i);
+            // Hiển thị thông báo
+            Toast.makeText(MainActivity.this, "Bạn chọn: " + strTenTinhChon, Toast.LENGTH_SHORT).show();
+
+        }
+        };
+
 }
