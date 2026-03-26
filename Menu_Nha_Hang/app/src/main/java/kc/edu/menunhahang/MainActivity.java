@@ -30,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
         dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Mô tả nội dung", R.drawable.img));
         dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Mô tả nội dung", R.drawable.img));
         dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Mô tả nội dung", R.drawable.img));
+        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Mô tả nội dung", R.drawable.img));
+        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Mô tả nội dung", R.drawable.img));
+        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Mô tả nội dung", R.drawable.img));
+        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Mô tả nội dung", R.drawable.img));
+        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Mô tả nội dung", R.drawable.img));
 
         MonAnAdapter adapter = new MonAnAdapter(this, dsMonAn);
         lvDSMonAn.setAdapter(adapter);
