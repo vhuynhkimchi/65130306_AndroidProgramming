@@ -21,13 +21,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BottomNavigationView bottomNav = findViewById(R.id.bottomNavigationView);
+        
+        // Load WelcomeFragment on startup
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.frgSpace, new WelcomeFragment())
+                    .commit();
+            bottomNav.setSelectedItemId(R.id.nav_welcome);
+        }
+        
         bottomNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment selectedFragment = null;
                 int itemId = item.getItemId();
-                if (itemId == R.id.nav_home) {
-                    selectedFragment = new HomeFragment();
+                if (itemId == R.id.nav_welcome) {
+                    selectedFragment = new WelcomeFragment();
                 } else if (itemId == R.id.nav_cau1) {
                     selectedFragment = new Cau1Fragment();
                 } else if (itemId == R.id.nav_cau2) {
