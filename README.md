@@ -36,7 +36,7 @@ Kho lưu trữ này được xây dựng bám sát theo các kiến thức cốt
 ## Bài Tập
 ### Bài tập Ôn thi Giữa Kỳ (OnTapBott)
 
-[Chi tiết bài tập](đường_dẫn_đến_thư_mục_chứa_bài_tập)
+[Chi tiết bài tập](OnTapBott/app/src/main/java/kc/edu/ontapbott)
 
 <p align="center">
   <img src="Images/im_01.png" width="24%" />
