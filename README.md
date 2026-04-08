@@ -30,3 +30,18 @@ Kho lưu trữ này được xây dựng bám sát theo các kiến thức cốt
 1. **IDE:** Trình soạn thảo **Android Studio** (khuyên dùng phiên bản mới nhất).
 2. **SDK:** Android SDK (tối thiểu API Level 24 trở lên).
 3. **Môi trường chạy:** Máy ảo Android (AVD) tích hợp sẵn trong Android Studio, hoặc thiết bị điện thoại Android thật đã bật chế độ *USB Debugging*.
+
+---
+
+## Bài Tập
+### Bài tập Ôn thi Giữa Kỳ (OnTapBott)
+
+[Chi tiết bài tập](đường_dẫn_đến_thư_mục_chứa_bài_tập)
+
+<p align="center">
+  <img src="Images_01.png" width="24%" />
+  <img src="Images_02.png" width="24%" />
+  <img src="Images_03.png" width="24%" />
+  <img src="Images_04.png" width="24%" />
+  <img src="Images_05.png" width="24%" />
+</p>
