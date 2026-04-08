@@ -39,9 +39,9 @@ Kho lưu trữ này được xây dựng bám sát theo các kiến thức cốt
 [Chi tiết bài tập](OnTapBott/app/src/main/java/kc/edu/ontapbott)
 
 <p align="center">
-  <img src="Images/im_01.png" width="24%" />
-  <img src="Images/im_02.png" width="24%" />
-  <img src="Images/im_03.png" width="24%" />
-  <img src="Images/im_04.png" width="24%" />
-  <img src="Images/im_05.png" width="24%" />
+  <img src="Images/im_01.png" width="20%" />
+  <img src="Images/im_02.png" width="20%" />
+  <img src="Images/im_03.png" width="20%" />
+  <img src="Images/im_04.png" width="20%" />
+  <img src="Images/im_05.png" width="20%" />
 </p>
