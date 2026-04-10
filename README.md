@@ -36,12 +36,12 @@ Kho lưu trữ này được xây dựng bám sát theo các kiến thức cốt
 ## Bài Tập
 ### Bài tập Ôn thi Giữa Kỳ (OnTapBott)
 
-[Chi tiết bài tập](đường_dẫn_đến_thư_mục_chứa_bài_tập)
+[Chi tiết bài tập](OnTapBott/app/src/main/java/kc/edu/ontapbott)
 
 <p align="center">
-  <img src="Images/im_01.png" width="24%" />
-  <img src="Images/im_02.png" width="24%" />
-  <img src=Images/im_03.png" width="24%" />
-  <img src="Images/im_04.png" width="24%" />
-  <img src="Images/im_05.png" width="24%" />
+  <img src="Images/im_01.png" width="20%" />
+  <img src="Images/im_02.png" width="20%" />
+  <img src="Images/im_03.png" width="20%" />
+  <img src="Images/im_04.png" width="20%" />
+  <img src="Images/im_05.png" width="20%" />
 </p>
