@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    tools:context=".QuocGiaFragment">
+
+    <ImageView
+        android:id="@+id/imageViewFlag"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="Country Flag"
+        tools:src="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewCountryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Tên Quốc Gia Ở Đây"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewPopular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Population: 123456789" />
+
+    </LinearLayout>
+
+</LinearLayout>

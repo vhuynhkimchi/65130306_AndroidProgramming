@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">VD2</string>
+    <string name="label_so_1">Số thứ nhất</string>
+    <string name="label_so_2">Số thứ hai</string>
+    <string name="label_ket_qua">Kết quả là:</string>
+    <string name="hint_nhap_so">Mời nhập con số ở đây</string>
+    <string name="hint_ket_qua">Nơi hiển thị kết quả</string>
 </resources>
