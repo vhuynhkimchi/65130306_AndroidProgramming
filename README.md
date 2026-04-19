@@ -56,3 +56,10 @@ Kho lưu trữ này được xây dựng bám sát theo các kiến thức cốt
   <img src="Images/nav_4.png" width="20%" />
   <img src="Images/nav_5.png" width="20%" />
 </p>
+
+### Bài tập Đọc Báo Tổng Hợp
+
+[Chi tiết bài tập](DocBaoTongHop\app\src\main)
+<p align="center">
+  <img src="Images/DocBao.png" />
+</p>G
