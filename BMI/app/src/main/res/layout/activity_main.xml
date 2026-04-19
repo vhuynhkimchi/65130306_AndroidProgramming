@@ -1,144 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#ADD8E6"
+    android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
+
     <LinearLayout
+        android:id="@+id/main"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:padding="10dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BMI"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
             android:gravity="center"
-            android:textSize="35dp"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="50dp"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        android:background="#00BFFF"
-        android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI Calculator"
+                android:textSize="42sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
 
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:text="Weight (kg)"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Your Body Mass Index"
+                android:textSize="14sp"
+                android:textColor="#E8F4F8" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/edtWeight"
+        <!-- Weight Input Card -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter weight (kg)"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        android:background="#00BFFF"
-        android:gravity="center_vertical">
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="15dp"
+            android:elevation="8dp">
 
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:text="Height (m)"
-            android:textStyle="bold"
-            android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight (kg)"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
 
-        <EditText
-            android:id="@+id/edtHeight"
+            <EditText
+                android:id="@+id/edtWeight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your weight"
+                android:inputType="numberDecimal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="@drawable/rounded_input_background"
+                android:textSize="16sp"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <!-- Height Input Card -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter height (m)"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal"
-        android:padding="10dp"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="15dp"
+            android:elevation="8dp">
 
-        android:gravity="center">
-        <Button
-            android:id="@+id/btnCalculate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Calculate BMI"
-            android:textSize="20sp"
-            />
-        <Button
-            android:id="@+id/btnReset"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Reset"
-            android:layout_marginLeft="20dp"
-            android:textSize="20sp"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height (m)"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:text="BMI"
-            android:textSize="25sp" />
+            <EditText
+                android:id="@+id/edtHeight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your height (e.g., 1.75)"
+                android:inputType="numberDecimal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="@drawable/rounded_input_background"
+                android:textSize="16sp"
+                android:textColor="#333333" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/edtBMI"
+        <!-- Buttons Section -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:enabled="false"
-            android:textStyle="bold"
-            android:textColor="@color/black"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:spacing="10dp">
 
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        android:gravity="center_vertical">
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="Calculate"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:background="#00796B"
+                android:layout_marginRight="8dp" />
 
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:text="Result"
-            android:textSize="25sp" />
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="Reset"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:background="#D32F2F"
+                android:layout_marginLeft="8dp" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/edtResult"
+        <!-- BMI Result Card -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:enabled="false"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            />
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="15dp"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your BMI"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edtBMI"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:enabled="false"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:textColor="#00796B"
+                android:gravity="center"
+                android:background="@drawable/rounded_result_background"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- Assessment Result Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="#FFFFFF"
+            android:elevation="8dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assessment"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edtResult"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:enabled="false"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#D32F2F"
+                android:gravity="center"
+                android:background="@drawable/rounded_assessment_background"
+                android:padding="12dp" />
+        </LinearLayout>
+
     </LinearLayout>
-</LinearLayout>
+</ScrollView>
