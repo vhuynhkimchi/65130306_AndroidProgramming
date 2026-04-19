@@ -2,7 +2,6 @@ package kc.edu.vd2;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
@@ -23,17 +22,6 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        
-        // Thiết lập click listeners cho các buttons
-        Button btnCong = findViewById(R.id.btnCong);
-        Button btnTru = findViewById(R.id.btnTru);
-        Button btnNhan = findViewById(R.id.btnNhan);
-        Button btnChia = findViewById(R.id.btnChia);
-        
-        btnCong.setOnClickListener(v -> XuLyCong(v));
-        btnTru.setOnClickListener(v -> XuLyTru(v));
-        btnNhan.setOnClickListener(v -> XuLyNhan(v));
-        btnChia.setOnClickListener(v -> XuLyChia(v));
     }
 
     //Xử lý cộng

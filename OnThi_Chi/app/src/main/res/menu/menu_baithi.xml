@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+    android:id="@+id/nav_welcome"
+    android:icon="@android:drawable/star_big_on"
+    android:title="Welcome" >
+    </item>
+    <item
+        android:id="@+id/nav_cau1"
+        android:icon="@android:drawable/ic_menu_always_landscape_portrait"
+        android:title="Cau 1" >
+    </item>
+    <item
+        android:id="@+id/nav_cau2"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Cau 2"></item>
+    <item
+        android:id="@+id/nav_cau3"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Cau 3"></item>
+    <item
+        android:id="@+id/nav_cau4"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="Cau 4"></item>
+</menu>

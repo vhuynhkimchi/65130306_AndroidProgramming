@@ -1,60 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:layout_height="120dp"
+    android:layout_height="520dp"
+    android:padding="1dp"
     android:layout_width="match_parent"
     android:orientation="horizontal"
-    android:padding="12dp"
-    android:background="@drawable/card_background"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
     <ImageView
         android:id="@+id/idHinhDaiDien"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:background="#E8F5E9"
-        android:scaleType="centerInside"
-        android:contentDescription="Menu item image" />
+        android:layout_width="50dp"
+        android:background="#EBE870"
+        android:layout_height="50dp">
+    </ImageView>
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:paddingLeft="16dp"
-        android:paddingRight="12dp"
-        android:gravity="center_vertical">
-
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="2dp"
+        android:background="#F9FACE">
         <TextView
             android:id="@+id/idTenMonAn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="20dp"
             android:text="Cơm tấm sườn"
             android:textStyle="bold"
-            android:textSize="16sp"
-            android:textColor="#212121"
-            android:maxLines="1"
-            android:ellipsize="end" />
-
-        <TextView
-            android:id="@+id/idMoTa"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cơm tấm ngon nhất thế giới"
-            android:layout_marginTop="4dp"
-            android:textSize="12sp"
-            android:textColor="#757575"
-            android:maxLines="2"
-            android:ellipsize="end" />
-
+            android:textSize="13dp">
+        </TextView>
         <TextView
             android:id="@+id/idDonGia"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="25,000 đ"
-            android:layout_marginTop="8dp"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            android:textColor="#4CAF50" />
+            android:layout_height="15dp"
+            android:textSize="10dp"
+            android:textColor="@color/material_dynamic_neutral_variant80">
 
+        </TextView>
+        <TextView
+            android:id="@+id/idMoTa"            android:layout_width="match_parent"
+            android:text="Cơm tấm ngon nhất thế giới"
+            android:layout_height="15dp"
+            android:textSize="7dp">
+        </TextView>
     </LinearLayout>
 </LinearLayout>

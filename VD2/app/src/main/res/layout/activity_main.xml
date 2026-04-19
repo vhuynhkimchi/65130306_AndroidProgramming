@@ -10,145 +10,112 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:padding="8dp"
+        android:padding="5dp"
         android:orientation="horizontal"
-        android:layout_marginTop="8dp"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical">
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/label_so_1"
-            android:textSize="16sp"
-            android:textColor="#1C28D0"
-            android:layout_marginEnd="8dp">
+            android:text="Số thứ nhất"
+            android:textSize="18dp"
+            android:textColor="#1C28D0">
         </TextView>
         <EditText
             android:id="@+id/edtSo1"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="48dp"
-            android:minHeight="48dp"
-            android:hint="@string/hint_nhap_so"
-            android:inputType="numberSigned|numberDecimal"
-            android:paddingStart="8dp"
-            android:paddingEnd="8dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mời nhập con số ở đây">
         </EditText>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:padding="8dp"
+        android:padding="5dp"
         android:orientation="horizontal"
-        android:layout_marginTop="8dp"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical">
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/label_so_2"
-            android:textSize="16sp"
-            android:textColor="#1C28D0"
-            android:layout_marginEnd="8dp">
+            android:text="Số thứ hai"
+            android:textSize="18dp"
+            android:textColor="#1C28D0">
         </TextView>
 
         <EditText
             android:id="@+id/edtSo2"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="48dp"
-            android:minHeight="48dp"
-            android:hint="@string/hint_nhap_so"
-            android:inputType="numberSigned|numberDecimal"
-            android:paddingStart="8dp"
-            android:paddingEnd="8dp"></EditText>
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mời nhập con số ở đây"></EditText>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="15dp"
         android:orientation="horizontal"
-        android:padding="8dp"
-        android:gravity="center">
+        android:padding="5dp">
 
         <Button
             android:id="@+id/btnCong"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:minHeight="56dp"
-            android:minWidth="56dp"
-            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:text="+"
-            android:textSize="24sp"
-            android:textStyle="bold">
+            android:onclick = "XuLyCong">
         </Button>
 
         <Button
             android:id="@+id/btnTru"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:minHeight="56dp"
-            android:minWidth="56dp"
-            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:text="-"
-            android:textSize="24sp"
-            android:textStyle="bold">
+            android:onclick = "XuLyTru">
         </Button>
 
         <Button
             android:id="@+id/btnNhan"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:minHeight="56dp"
-            android:minWidth="56dp"
-            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:text="*"
-            android:textSize="24sp"
-            android:textStyle="bold">
-            
+            android:onclick = "XuLyNhan">
         </Button>
 
         <Button
             android:id="@+id/btnChia"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:minHeight="56dp"
-            android:minWidth="56dp"
-            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:text="/"
-            android:textSize="24sp"
-            android:textStyle="bold">
+            android:onclick = "XuLyChia">
 
         </Button>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:padding="8dp"
+        android:padding="5dp"
         android:orientation="horizontal"
-        android:layout_marginTop="8dp"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical">
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/label_ket_qua"
-            android:textSize="16sp"
-            android:textColor="#1C28D0"
-            android:layout_marginEnd="8dp">
+            android:text="Kết quả là: "
+            android:textSize="18dp"
+            android:textColor="#1C28D0">
         </TextView>
         <EditText
             android:id="@+id/edtKetQua"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="48dp"
-            android:minHeight="48dp"
-            android:hint="@string/hint_ket_qua"
-            android:inputType="none"
-            android:paddingStart="8dp"
-            android:paddingEnd="8dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nơi hiển thị kết quả"
             android:enabled="false">
         </EditText>
     </LinearLayout>
