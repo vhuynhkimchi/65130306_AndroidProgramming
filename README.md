@@ -57,6 +57,15 @@ Kho lưu trữ này được xây dựng bám sát theo các kiến thức cốt
   <img src="Images/nav_5.png" width="20%" />
 </p>
 
+### Bài tập Viewpager2
+
+[Chi tiết bài tập](ViewPager2TabLayoutFragment\app\src\main)
+<p align="center">
+  <img src="Images/QG1.png" width="30%" />
+  <img src="Images/QG2.png" width="30%" />
+  <img src="Images/QG3.png" width="30%" />
+</p>
+
 ### Bài tập LandScape Viewpager
 
 [Chi tiết bài tập](LandScape_ViewPager\app\src\main)
