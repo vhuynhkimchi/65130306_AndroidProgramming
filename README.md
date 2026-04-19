@@ -57,6 +57,15 @@ Kho lưu trữ này được xây dựng bám sát theo các kiến thức cốt
   <img src="Images/nav_5.png" width="20%" />
 </p>
 
+### Bài tập LandScape Viewpager
+
+[Chi tiết bài tập](LandScape_ViewPager\app\src\main)
+<p align="center">
+  <img src="Images/viewpager1.png" width="30%" />
+  <img src="Images/viewpager2.png" width="30%" />
+  <img src="Images/viewpager3.png" width="30%" />
+</p>
+
 ### Bài tập Đọc Báo Tổng Hợp
 
 [Chi tiết bài tập](DocBaoTongHop\app\src\main)
