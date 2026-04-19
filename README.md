@@ -45,3 +45,14 @@ Kho lưu trữ này được xây dựng bám sát theo các kiến thức cốt
   <img src="Images/im_04.png" width="20%" />
   <img src="Images/im_05.png" width="20%" />
 </p>
+
+### Bài tập Navigation_Drawer
+
+[Chi tiết bài tập](Navigation_Drawer/app/src/main/java/kc/edu/navigation_drawer)
+<p align="center">
+  <img src="Images/nav_1.png" width="20%" />
+  <img src="Images/nav_2.png" width="20%" />
+  <img src="Images/nav_3.png" width="20%" />
+  <img src="Images/nav_4.png" width="20%" />
+  <img src="Images/nav_5.png" width="20%" />
+</p>
