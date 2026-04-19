@@ -87,7 +87,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
         android:elevation="4dp"
-        android:backgroundTint="#F666D3"
+        android:backgroundTint="#4CA3D9"
         android:text="ĐỔI ĐƠN VỊ ĐO"
         android:textColor="@android:color/white"
         android:textSize="16sp"

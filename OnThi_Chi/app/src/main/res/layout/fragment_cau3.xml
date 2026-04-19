@@ -14,7 +14,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="13dp"
-        android:background="#FFB6C1"
+        android:background="#87CEEB"
         android:elevation="2dp"
         android:orientation="vertical"
         android:padding="20dp"

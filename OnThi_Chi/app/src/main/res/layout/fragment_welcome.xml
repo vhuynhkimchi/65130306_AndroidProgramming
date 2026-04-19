@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFE4E1"
+    android:background="#ADD8E6"
     tools:context=".WelcomeFragment">
 
     <ScrollView
@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
-                app:cardBackgroundColor="#FFB6C1"
+                app:cardBackgroundColor="#87CEEB"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="8dp">
 
@@ -64,7 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                app:cardBackgroundColor="#FFE4E1"
+                app:cardBackgroundColor="#87CEEB"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="4dp">
 
@@ -80,7 +80,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Số Tín Chỉ:"
-                        android:textColor="#C85A7C"
+                        android:textColor="#4682B4"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -89,7 +89,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="10dp"
                         android:text="4"
-                        android:textColor="#FF69B4"
+                        android:textColor="#4682B4"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -100,7 +100,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                app:cardBackgroundColor="#FFE4E1"
+                app:cardBackgroundColor="#87CEEB"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="4dp">
 
@@ -115,7 +115,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:text="Giảng Viên:"
-                        android:textColor="#C85A7C"
+                        android:textColor="#4682B4"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -123,7 +123,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="TS. Mai Cường Thọ"
-                        android:textColor="#FF69B4"
+                        android:textColor="#4682B4"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -134,7 +134,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                app:cardBackgroundColor="#FFE4E1"
+                app:cardBackgroundColor="#87CEEB"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="4dp">
 
@@ -150,7 +150,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Thời Gian Làm Bài:"
-                        android:textColor="#C85A7C"
+                        android:textColor="#4682B4"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -159,7 +159,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="10dp"
                         android:text="60 phút"
-                        android:textColor="#FF1493"
+                        android:textColor="#4682B4"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 

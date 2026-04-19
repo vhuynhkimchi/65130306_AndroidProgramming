@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="25dp"
-                app:cardBackgroundColor="#FFB6C1"
+                app:cardBackgroundColor="#ADD8E6"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="8dp">
 
@@ -82,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                app:cardBackgroundColor="#FFB6D9"
+                app:cardBackgroundColor="#B0E0E6"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="4dp">
 
@@ -100,14 +100,14 @@
                         android:text="Lớp:"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="#C85A7C" />
+                        android:textColor="#4169E1" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="65.CNTT-1"
                         android:textSize="16sp"
-                        android:textColor="#C85A7C"
+                        android:textColor="#4169E1"
                         android:layout_marginEnd="10dp" />
 
                 </LinearLayout>
@@ -118,7 +118,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                app:cardBackgroundColor="#FFB6D9"
+                app:cardBackgroundColor="#B0E0E6"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="4dp">
 
@@ -134,7 +134,7 @@
                         android:text="Sở Thích:"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="#C85A7C"
+                        android:textColor="#4169E1"
                         android:layout_marginBottom="12dp" />
 
                     <LinearLayout
@@ -148,7 +148,7 @@
                             android:layout_height="wrap_content"
                             android:text="Du Lịch"
                             android:textColor="#FFFFFF"
-                            app:chipBackgroundColor="#FF69B4"
+                            app:chipBackgroundColor="#4CA3D9"
                             android:layout_marginEnd="10dp"
                             android:layout_marginBottom="8dp" />
 
@@ -157,7 +157,7 @@
                             android:layout_height="wrap_content"
                             android:text="Nuôi Thú Cưng"
                             android:textColor="#FFFFFF"
-                            app:chipBackgroundColor="#FF69B4" />
+                            app:chipBackgroundColor="#4CA3D9" />
 
                     </LinearLayout>
 
@@ -169,7 +169,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                app:cardBackgroundColor="#FFB6D9"
+                app:cardBackgroundColor="#B0E0E6"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="4dp">
 
@@ -185,7 +185,7 @@
                         android:text="GitHub:"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="#C85A7C"
+                        android:textColor="#4169E1"
                         android:layout_marginBottom="8dp" />
 
                     <TextView
@@ -206,7 +206,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
-                app:cardBackgroundColor="#FFB6D9"
+                app:cardBackgroundColor="#B0E0E6"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="4dp">
 
@@ -222,7 +222,7 @@
                         android:text="Facebook:"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="#C85A7C"
+                        android:textColor="#4169E1"
                         android:layout_marginBottom="8dp" />
 
                     <TextView
@@ -242,7 +242,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardBackgroundColor="#FFB6D9"
+                app:cardBackgroundColor="#B0E0E6"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="4dp">
 
@@ -258,7 +258,7 @@
                         android:text="Về Bản Thân:"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="#C85A7C"
+                        android:textColor="#4169E1"
                         android:layout_marginBottom="8dp" />
 
                     <TextView
@@ -266,7 +266,7 @@
                         android:layout_height="wrap_content"
                         android:text="Sinh viên khoa Công Nghệ Thông Tin, yêu thích công nghệ, học tập tích cực và luôn sẵn sàng tìm hiểu những công nghệ mới."
                         android:textSize="14sp"
-                        android:textColor="#C85A7C"
+                        android:textColor="#4169E1"
                         android:lineSpacingMultiplier="1.2" />
 
                 </LinearLayout>
