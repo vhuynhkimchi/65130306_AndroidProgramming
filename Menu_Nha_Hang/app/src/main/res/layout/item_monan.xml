@@ -1,45 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:layout_height="520dp"
+    android:layout_height="700dp"
     android:padding="1dp"
     android:layout_width="match_parent"
     android:orientation="horizontal"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <ImageView
         android:id="@+id/idHinhDaiDien"
-        android:layout_width="50dp"
+        android:layout_width="100dp"
         android:background="#EBE870"
-        android:layout_height="50dp">
+        android:layout_height="100dp">
     </ImageView>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="100dp"
         android:paddingLeft="2dp"
         android:background="#F9FACE">
         <TextView
             android:id="@+id/idTenMonAn"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="40dp"
             android:text="Cơm tấm sườn"
             android:textStyle="bold"
-            android:textSize="13dp">
+            android:textSize="22dp">
         </TextView>
         <TextView
             android:id="@+id/idDonGia"
             android:layout_width="match_parent"
             android:text="25,000 đ"
-            android:layout_height="15dp"
-            android:textSize="10dp"
+            android:layout_height="30dp"
+            android:textSize="17dp"
             android:textColor="@color/material_dynamic_neutral_variant80">
 
         </TextView>
         <TextView
-            android:id="@+id/idMoTa"            android:layout_width="match_parent"
+            android:id="@+id/idMoTa"
+            android:layout_width="match_parent"
             android:text="Cơm tấm ngon nhất thế giới"
-            android:layout_height="15dp"
-            android:textSize="7dp">
+            android:layout_height="30dp"
+            android:textSize="14dp">
         </TextView>
     </LinearLayout>
 </LinearLayout>

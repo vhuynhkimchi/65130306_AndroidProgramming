@@ -26,10 +26,13 @@ public class MainActivity extends AppCompatActivity {
 
         //Chuânr bị dữ liệu
         ArrayList<MonAn> dsMonAn = new ArrayList<MonAn>();
-        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Mô tả nội dung", R.drawable.img));
-        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Mô tả nội dung", R.drawable.img));
-        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Mô tả nội dung", R.drawable.img));
-        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Mô tả nội dung", R.drawable.img));
+        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Cơm tấm ngon nhất thế giới", R.drawable.img));
+        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Cơm tấm ngon nhất thế giới", R.drawable.img));
+        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Cơm tấm ngon nhất thế giới", R.drawable.img));
+        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Cơm tấm ngon nhất thế giới", R.drawable.img));
+        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Cơm tấm ngon nhất thế giới", R.drawable.img));
+        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Cơm tấm ngon nhất thế giới", R.drawable.img));
+        dsMonAn.add(new MonAn("Cơm Tấm Sườn", 25000, "Cơm tấm ngon nhất thế giới", R.drawable.img));
 
         MonAnAdapter adapter = new MonAnAdapter(this, dsMonAn);
         lvDSMonAn.setAdapter(adapter);

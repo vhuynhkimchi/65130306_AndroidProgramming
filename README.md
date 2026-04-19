@@ -62,4 +62,11 @@ Kho lưu trữ này được xây dựng bám sát theo các kiến thức cốt
 [Chi tiết bài tập](DocBaoTongHop\app\src\main)
 <p align="center">
   <img src="Images/DocBao.png" />
-</p>G
+</p>
+
+### Bài tập Menu Món Ăn
+
+[Chi tiết bài tập](Menu_Nha_Hang\app\src\main)
+<p align="center">
+  <img src="Images/menu.png" />
+</p>
