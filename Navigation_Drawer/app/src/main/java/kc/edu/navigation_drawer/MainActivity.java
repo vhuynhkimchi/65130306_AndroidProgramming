@@ -1,9 +1,13 @@
 package kc.edu.navigation_drawer;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu; // Thêm import này
 import android.view.MenuItem;
-import androidx.appcompat.widget.Toolbar;
+import android.view.View;
+import android.widget.Toast;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.activity.EdgeToEdge;
 import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
@@ -32,6 +36,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         setSupportActionBar(toolbar);
 
+        // Đã sửa lỗi dòng lệnh bị bỏ dở và sai ID
+        Menu menu = navigationView.getMenu();
+        // Nếu bạn muốn làm gì đó với item logout khi khởi tạo, hãy viết ở đây.
+        // Nếu không cần thì có thể xóa 2 dòng dưới.
+        MenuItem logoutItem = menu.findItem(R.id.nav_logout);
+
         navigationView.bringToFront();
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -39,7 +49,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
-        // Handle back button with NavigationView
+        // Sửa R.nav_home thành R.id.nav_home
+        navigationView.setCheckedItem(R.id.nav_home);
+
         OnBackPressedCallback callback = new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
@@ -53,8 +65,31 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         };
         getOnBackPressedDispatcher().addCallback(this, callback);
     }
+
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        return false;
+        // Sửa lỗi dấu ; thành : và lỗi logic chuyển Activity
+        int id = item.getItemId();
+
+        if (id == R.id.nav_home) {
+            // Đang ở Home nên không cần làm gì hoặc load Fragment Home
+        } else if (id == R.id.nav_bus) {
+            Intent intent = new Intent(MainActivity.this, Bus.class);
+            startActivity(intent); // Sửa từ startActivities thành startActivity
+        } else if (id == R.id.nav_share) {
+            Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.nav_logout) {
+            Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
+        }
+
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
     }
+    // Các hàm xử lý sự kiện onClick cho 6 ô
+    public void onBicycleClick(View view) {
+        Toast.makeText(this, "Bicycle selected", Toast.LENGTH_SHORT).show();
+        // Xử lý chuyển Activity ở đây
+    }
+
 }
