@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFF8F8"
+    tools:context=".Cau1Fragment">
+
+    <!-- Header Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐỔI TỈ GIÁ TIỀN"
+        android:textAlignment="center"
+        android:textColor="#2C3E50"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chuyển đổi tiền từ VND sang Đôla"
+        android:textAlignment="center"
+        android:textColor="#7F8C8D"
+        android:textSize="14sp"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Card Container for Input Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="20dp"
+        android:elevation="2dp">
+
+        <!-- Mét Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập số tiền (VNĐ)"
+            android:textColor="#34495E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editSoTienVND"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="20dp"
+            android:padding="12dp"
+            android:inputType="number"
+            android:hint="Nhập số tiền..."
+            android:textColor="#2C3E50"
+            android:textColorHint="#BDC3C7" />
+
+        <!-- Kilômét Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập số tiền (Đôla)"
+            android:textColor="#34495E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editSoTienDola"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:inputType="number"
+            android:hint="Nhập số tiền..."
+            android:textColor="#2C3E50"
+            android:textColorHint="#BDC3C7" />
+    </LinearLayout>
+
+    <!-- Convert Button -->
+    <Button
+        android:id="@+id/btnDoi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:elevation="4dp"
+        android:backgroundTint="#4CA3D9"
+        android:text="ĐỔI TIỀN"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
