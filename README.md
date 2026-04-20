@@ -34,7 +34,7 @@ Kho lưu trữ này được xây dựng bám sát theo các kiến thức cốt
 ---
 
 ## Bài Tập
-### Bài tập Thi Giữa Kỳ (OnTapBott)
+### Bài tập Thi Giữa Kỳ 
 
 [Chi tiết bài tập](thigk2_65130306\app\src\main)
 
