@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="700dp"
+    android:padding="1dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/idHinhDaiDien"
+        android:layout_width="100dp"
+        android:background="#EBE870"
+        android:layout_height="100dp">
+    </ImageView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="2dp"
+        android:background="#F9FACE">
+        <TextView
+            android:id="@+id/idTenMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Bai hat"
+            android:textStyle="bold"
+            android:textSize="22dp">
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>

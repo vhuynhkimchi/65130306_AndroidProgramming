@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class Cau1Fragment extends Fragment {
     EditText editText_VND;
     EditText editText_DOLA;
@@ -46,22 +48,26 @@ public class Cau1Fragment extends Fragment {
         btnDoiDonVi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String soTienVND = editText_VND.getText().toString();
-                String soTienDola = editText_DOLA.getText().toString();
-                if (!soTienVND.isEmpty()) {
-                    // Đổi VND sang Dola
-                    double vnd = Double.parseDouble(soTienVND);
-                    double dola = vnd / TI_GIA;
-                    editText_DOLA.setText(String.format("%.2f", dola));
-                    Toast.makeText(viewCau1.getContext(), "VND -> Dola", Toast.LENGTH_SHORT).show();
-                } else if (!soTienDola.isEmpty()) {
-                    // Đổi Dola sang VND
-                    double dola = Double.parseDouble(soTienDola);
-                    double vnd = dola * TI_GIA;
-                    editText_VND.setText(String.format("%.0f", vnd));
-                    Toast.makeText(viewCau1.getContext(), "Dola -> VND", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(viewCau1.getContext(), "Vui lòng nhập số tiền!", Toast.LENGTH_SHORT).show();
+                String soTienVND = editText_VND.getText().toString().trim();
+                String soTienDola = editText_DOLA.getText().toString().trim();
+                try {
+                    if (!soTienVND.isEmpty()) {
+                        // Đổi VND sang Dola
+                        double vnd = Double.parseDouble(soTienVND);
+                        double dola = vnd / TI_GIA;
+                        editText_DOLA.setText(String.format(Locale.US, "%.2f", dola));
+                        Toast.makeText(viewCau1.getContext(), "VND -> Dola: " + String.format(Locale.US, "%.2f", dola) + " $", Toast.LENGTH_SHORT).show();
+                    } else if (!soTienDola.isEmpty()) {
+                        // Đổi Dola sang VND
+                        double dola = Double.parseDouble(soTienDola);
+                        double vnd = dola * TI_GIA;
+                        editText_VND.setText(String.format(Locale.US, "%.0f", vnd));
+                        Toast.makeText(viewCau1.getContext(), "Dola -> VND: " + String.format(Locale.US, "%.0f", vnd) + " VND", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(viewCau1.getContext(), "Vui lòng nhập số tiền!", Toast.LENGTH_SHORT).show();
+                    }
+                } catch (NumberFormatException e) {
+                    Toast.makeText(viewCau1.getContext(), "Số tiền không hợp lệ!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
