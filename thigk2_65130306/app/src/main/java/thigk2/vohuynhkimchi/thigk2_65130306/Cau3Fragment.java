@@ -33,11 +33,11 @@ public class Cau3Fragment extends Fragment {
         super.onCreate(savedInstanceState);
         //Chuẩn bị dữ liệu
         recyclerViewDatas = new ArrayList<DanhNhan>();
-        DanhNhan danhnhan1 = new DanhNhan("hcm", "Hồ Chí Minh","Nghe An");
-        DanhNhan danhnhan2 = new DanhNhan("hcm", "Hồ Chí Minh","Nghe An");
-        DanhNhan danhnhan3 = new DanhNhan("hcm", "Hồ Chí Minh","Nghe An");
-        DanhNhan danhnhan4 = new DanhNhan("hcm", "Hồ Chí Minh","Nghe An");
-        DanhNhan danhnhan5 = new DanhNhan("hcm", "Hồ Chí Minh","Nghe An");
+        DanhNhan danhnhan1 = new DanhNhan("cmvn", "Hồ Chí Minh","Nghe An");
+        DanhNhan danhnhan2 = new DanhNhan("cmvn", "Hồ Chí Minh","Nghe An");
+        DanhNhan danhnhan3 = new DanhNhan("cmvn", "Hồ Chí Minh","Nghe An");
+        DanhNhan danhnhan4 = new DanhNhan("cmvn", "Hồ Chí Minh","Nghe An");
+        DanhNhan danhnhan5 = new DanhNhan("cmvn", "Hồ Chí Minh","Nghe An");
         recyclerViewDatas.add(danhnhan1);
         recyclerViewDatas.add(danhnhan2);
         recyclerViewDatas.add(danhnhan3);

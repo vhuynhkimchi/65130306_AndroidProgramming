@@ -45,7 +45,7 @@ public class DanhNhanAdapter extends RecyclerView.Adapter<DanhNhanAdapter.ItemDa
         holder.tvMoTa.setText(queQuan);
         //dat anh
         String packageName = holder.itemView.getContext().getPackageName();
-        int imageID = holder.itemView.getResources().getIdentifier(tenAnh, "mipmap", packageName);
+        int imageID = holder.itemView.getResources().getIdentifier(tenAnh, "drawable", packageName);
         holder.ivAnhDaiDien.setImageResource(imageID);
     }
 
@@ -73,6 +73,7 @@ public class DanhNhanAdapter extends RecyclerView.Adapter<DanhNhanAdapter.ItemDa
             DanhNhan phanTuDuocClick = lstData.get(viTriDuocClick);
             //lay thong tin
             String ten = phanTuDuocClick.getName();
+            String tenFile = phanTuDuocClick.getDanhnhanImageFileName();
             //
             String chuoiThongBao = "Ban vua click vao : " + ten;
             Toast.makeText(v.getContext(), chuoiThongBao, Toast.LENGTH_SHORT).show();
