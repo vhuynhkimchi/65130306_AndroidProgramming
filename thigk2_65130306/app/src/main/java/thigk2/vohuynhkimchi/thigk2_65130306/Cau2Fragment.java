@@ -1,64 +1,70 @@
 package thigk2.vohuynhkimchi.thigk2_65130306;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Cau2Fragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.fragment.app.Fragment;
+
+import java.util.ArrayList;
+
 public class Cau2Fragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    BaiHatAdapter baiHatAdapter;
+    ArrayList<BaiHat> recyclerViewDatas;
+    ListView listViewBaiHat;
 
     public Cau2Fragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Cau2Fragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static Cau2Fragment newInstance(String param1, String param2) {
         Cau2Fragment fragment = new Cau2Fragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+        //Chuẩn bị dữ liệu
+        recyclerViewDatas = new ArrayList<BaiHat>();
+        BaiHat baiHat1 = new BaiHat("Võ Huỳnh Kim Chi-65130306", R.drawable.cmvn);
+        BaiHat baiHat2 = new BaiHat("Tiến quân ca", R.drawable.cmvn);
+        BaiHat baiHat3 = new BaiHat("Như có Bác trong ngày đại thắng", R.drawable.cmvn);
+        BaiHat baiHat4 = new BaiHat("Mùa xuân trên Thành phố Hồ Chí Minh", R.drawable.cmvn);
+        BaiHat baiHat5 = new BaiHat("Mùa xuân trên Thành phố Hồ Chí Minh", R.drawable.cmvn);
+        BaiHat baiHat6 = new BaiHat("Mùa xuân trên Thành phố Hồ Chí Minh", R.drawable.cmvn);
+        BaiHat baiHat7 = new BaiHat("Mùa xuân trên Thành phố Hồ Chí Minh", R.drawable.cmvn);
+        BaiHat baiHat8 = new BaiHat("Mùa xuân trên Thành phố Hồ Chí Minh", R.drawable.cmvn);
+        BaiHat baiHat9 = new BaiHat("Mùa xuân trên Thành phố Hồ Chí Minh", R.drawable.cmvn);
+        BaiHat baiHat10 = new BaiHat("Mùa xuân trên Thành phố Hồ Chí Minh", R.drawable.cmvn);
+
+        recyclerViewDatas.add(baiHat1);
+        recyclerViewDatas.add(baiHat2);
+        recyclerViewDatas.add(baiHat3);
+        recyclerViewDatas.add(baiHat4);
+        recyclerViewDatas.add(baiHat5);
+        recyclerViewDatas.add(baiHat6);
+        recyclerViewDatas.add(baiHat7);
+        recyclerViewDatas.add(baiHat8);
+        recyclerViewDatas.add(baiHat9);
+        recyclerViewDatas.add(baiHat10);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View viewCau2 = inflater.inflate(R.layout.fragment_cau2, container, false);
+        // Tìm ListView trong layout
+        listViewBaiHat = viewCau2.findViewById(R.id.lvDSBaiHat);
+        // Tạo adapter
+        baiHatAdapter = new BaiHatAdapter(viewCau2.getContext(), recyclerViewDatas);
+        // Gán adapter cho ListView
+        listViewBaiHat.setAdapter(baiHatAdapter);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cau2, container, false);
+        return viewCau2;
     }
 }
