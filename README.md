@@ -34,6 +34,18 @@ Kho lưu trữ này được xây dựng bám sát theo các kiến thức cốt
 ---
 
 ## Bài Tập
+### Bài tập Thi Giữa Kỳ (OnTapBott)
+
+[Chi tiết bài tập](thigk2_65130306\app\src\main)
+
+<p align="center">
+  <img src="Images/gk1.png" width="20%" />
+  <img src="Images/gk2.png" width="20%" />
+  <img src="Images/gk3.png" width="20%" />
+  <img src="Images/gk4.png" width="20%" />
+</p>
+
+## Bài Tập
 ### Bài tập Ôn thi Giữa Kỳ (OnTapBott)
 
 [Chi tiết bài tập](OnTapBott/app/src/main/java/kc/edu/ontapbott)
