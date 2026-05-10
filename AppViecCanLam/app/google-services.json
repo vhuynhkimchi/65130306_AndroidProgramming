@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1069669767166",
+    "project_id": "appvieccanlam",
+    "storage_bucket": "appvieccanlam.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069669767166:android:28153ac9018d89b50e52af",
+        "android_client_info": {
+          "package_name": "kc.edu.appvieccanlam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAicsr5XB13Bgfo1WFbZGj-oXmf6hnI1tg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
